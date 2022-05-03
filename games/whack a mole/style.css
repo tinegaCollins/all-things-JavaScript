@@ -1,0 +1,16 @@
+body{
+    background: rgb(103, 218, 218);
+    display: grid;
+    place-items: center;
+}
+section{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+}
+section div{
+    border: 1px solid black;
+}
+.red{
+    background-color: red;
+}
