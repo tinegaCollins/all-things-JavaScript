@@ -1,24 +1,33 @@
-function getSecondLetter(letter,,starting){
-    let indexOfSecondLetter;
-    if(word[starting] == letter){
-        indexOfSecondLetter = word.indexOf(word[startingPoint])
-        return(indexOfSecondLetter,indexOfFirstLetter)
+function getDistance(word){
+    let element = []
+    for (let i = 0; i < word.length; i++) {
+        element.push(word[i])
     }
-    else {
-        return getSecondLetter(letter,word,startingPoint += 1)
+    function getSecondIndex(start2){
+        if(element[start2] == 'b'){
+            let pos = element.indexOf('b')
+            console.log(pos)
+            return pos;
+        }
+        else{
+            getSecondIndex(start2 + 1)
+        }
     }
+    function getFirstIndex(start){
+        if(element[start] == 'a'){
+            return element.indexOf('a')
+        }
+        else{
+            getFirstIndex(start + 1)
+        }
+    }
+
+    let a = getFirstIndex(0)
+    let b = getSecondIndex(0)
+    console.log(b)
+    
+    return b-a
 }
 
-function getLetter(letter1,letter2,word,startingPoint){
-    let indexOfFirstLetter;
-    if (word[startingPoint] == letter1){
-        indexOfFirstLetter = word.indexOf(word[startingPoint])
-        getSecondLetter(letter2,word,startingPoint)
-    }
-    else {
-        return getLetter(letter1,word,startingPoint += 1)
-    }
-}
-console.log(getLetter('a','b',['e','r','a','t','b'], 0))
-
+console.log(getDistance('alllb'))
 
