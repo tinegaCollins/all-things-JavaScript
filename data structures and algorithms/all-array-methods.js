@@ -182,4 +182,3 @@ const atleastAcource = students.every((element)=>{
     return element.courses.length > 1
 })
 
-console.log(atleastAcource);
