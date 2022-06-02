@@ -3,32 +3,31 @@
 //stack.peek displaying the item on top
 //stack.length - the size of a stack
 
-var letters = [];
-var word = "racecar"
-var rword= "";
-//put the letters of the word into a stack
-
-for (let i= 0; i<word.length; i++){
-    letters.push(word[i])
-}
-for (let i= 0; i<word.length; i++){
-    rword += letters.pop();
-}
-
-if (rword===word){
-    console.log(`${word} is a palindrome`)
-}
-else{
-    console.log(`${word} is not a palindrome`)
-}
 
 
-const person = {
-    firstName: "John",
-    lastName : "Doe",
-    id       : 5566,
-    fullName : function() {
-      return this.firstName + " " + this.lastName;
+function palindrome(word){
+    let letters = [];
+    for (let i = 0; i < word.length; i++) {
+        letters.push(word[i]);
     }
-  };
-console.log(person.fullName())
+    let reverseLetters = ''
+    for (let j = 0; j < word.length; j++) {
+        reverseLetters += letters.pop()
+    }
+    if(reverseLetters == word){
+        return `${word} is a palindrome`
+    }
+    else {
+        return `${word} is not a palindrome`
+    }
+}
+
+console.log(palindrome('tinega'));
+
+function practice(nums){
+    nums.push(4)
+    console.log(nums)
+    nums.pop()
+    console.log(nums)
+}
+practice([2,4,5])

@@ -24,6 +24,44 @@ queue1.enqueue(3)
 queue1.print()
 queue1.dequeue()
 queue1.print()
-let a = [1,2,3,4,5]
-console.log(a.indexOf(77))
 
+
+//priority queue
+
+
+function priorityQueue(){
+    const collection = [];
+    this.printCollection = function(){
+        console.log(collection)
+    }
+    this.enqueue = function(element) {
+        if(collection.length == 0){
+            collection.push(element)
+        }
+        else {
+            var added = false
+            for (let i = 0; i < collection.length; i++) {
+                if(element[1] < collection[i][1]){
+                    collection.splice(i,0,element);
+                    added = true
+                    break;
+                }
+            }
+            if(!added){
+                collection.push(element)
+            }
+        }
+    }
+    this.dequeue = function(){
+        let value = collection.shift()
+        return value
+    }
+}
+let newP = new priorityQueue
+newP.enqueue(['moranga',5])
+newP.enqueue(['tinega', 2])
+newP.enqueue(['collins', 1])
+newP.printCollection()
+
+newP.dequeue()
+newP.printCollection()

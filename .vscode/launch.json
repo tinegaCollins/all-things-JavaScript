@@ -18,7 +18,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\data structures and algorithms\\all-array-methods.js"
+            "program": "${workspaceFolder}\\data structures and algorithms\\leet-code\\search-insert-position.js"
         },
         {
             "type": "node-terminal",
