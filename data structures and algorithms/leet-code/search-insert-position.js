@@ -3,22 +3,24 @@
 
 
 var searchInsert = function(nums, target) {
-    let index = nums.indexOf(target)
-    console.log(index)
-    if(index < 0){
-        for(i=0;i<nums.length;i++){
-            if(nums[i] > target){
-                console.log(nums[i])
-                return nums[i] - 1;
-            }
-            else {
-
-            }
-        }
+    let index = nums.indexOf(target);
+    if(nums.indexOf(target) === -1){
+        
     }
     else {
         return index;
     }
 };
 
-searchInsert([1,2,3,4,5], 6)
+
+function getIndex(nums,target){
+    let start = 0;
+    if(nums[start] > target){
+        return nums.indexOf(nums[start])
+    }
+    else{
+        start + 1;
+        getIndex(nums,target)
+    }
+}
+console.log(getIndex([1,2,3,4,5,7], 4))
