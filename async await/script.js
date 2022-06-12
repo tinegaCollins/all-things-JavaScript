@@ -1,5 +1,3 @@
-// callbacks
-
 
 let stocks = {
     fruits : ['grapes', 'strawberry','banana', 'apple'],
@@ -7,15 +5,30 @@ let stocks = {
     holder : ['cone', 'cup', 'stick'],
     toppings : ['chocolate', 'peanuts']
 }
-let order = (call_production)=>{
-    console.log("order placed call production")
-    call_production()
-};
 
-let production = ()=>{
-    console.log("production started")
+let isShopOpen = true;
+
+let toppingsChoice = ()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            resolve(
+                console.log("which toping")
+            )
+        }, 3000);
+    })
 }
 
-// order(production)
+async function kitchen(){
+    console.log("a");
+    console.log("b");
 
- 
+    await toppingsChoice()
+    console.log("c");
+    console.log("d");
+    console.log("e");
+}
+kitchen()
+
+console.log("fuckig kidding me");
+console.log("non ogg");
+console.log("taking other orders");
