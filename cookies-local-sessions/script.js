@@ -15,5 +15,4 @@ console.log(sessionStorage.getItem('name'));
 document.cookie = 'name=John: expires=' + new Date(9999, 0 , 1).toUTCString();
 document.cookie = 'id=12345: expires=' + new Date(9999, 0 , 1).toUTCString();
 
-
 console.log(document.cookie);

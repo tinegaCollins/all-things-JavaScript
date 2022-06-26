@@ -1,0 +1,23 @@
+{
+  "name": "all-things-javascript-1",
+  "version": "1.0.0",
+  "description": "this repository represents all things i do in vanilla javascript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon data-structures-and-algorithms/ all-array-methods.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinegaCollins/all-things-JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinegaCollins/all-things-JavaScript/issues"
+  },
+  "homepage": "https://github.com/tinegaCollins/all-things-JavaScript#readme",
+  "dependencies": {
+    "nodemon": "^2.0.18"
+  }
+}

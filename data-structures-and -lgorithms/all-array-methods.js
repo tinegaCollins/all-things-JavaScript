@@ -24,7 +24,7 @@ let [tomato,eggplant,carrot,pepper] = vegetables
 //asigning a default value 
 
 const fruits = ['🍇','🍈','🍐','🍑','🍏','🍎','🥭','🍍']
-let [paw,melon, mango = '🥭'] = fruits
+let [paw,melon, mango = '🥭'] = fruits;
 
 
 //spread operator , rest parameter
@@ -159,7 +159,7 @@ const ages = students.map((element)=>{
 //reduce conducts expresions 
 
 const totalPaid = students.reduce((accumulator,element)=>{
-    accumulator = accumulator + element.paid
+    let accumulator = accumulator + element.paid
     return accumulator
 },0)
 
@@ -182,3 +182,7 @@ const atleastAcource = students.every((element)=>{
     return element.courses.length > 1
 })
 
+//get f_name and l_name of all students
+const newArray = students.map((element)=>{
+    return element.f_name + ' ' + element.l_name
+})
