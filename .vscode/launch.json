@@ -18,7 +18,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\data structures and algorithms\\linked-list-practice.js"
+            "program": "${workspaceFolder}\\data-structures-and-algorithms\\linked-list\\list.js"
         },
         {
             "type": "node-terminal",
