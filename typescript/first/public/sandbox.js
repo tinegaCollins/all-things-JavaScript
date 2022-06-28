@@ -61,4 +61,11 @@ const minus = (a, b) => {
     return a - b;
 };
 const result = minus(2, 4);
-console.log(result);
+const person = (user) => {
+    return user;
+};
+console.log(person({ name: "collo", age: 5, alive: true }));
+const check = (name) => {
+    console.log(name);
+};
+check(4);

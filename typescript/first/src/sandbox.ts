@@ -79,4 +79,21 @@ const minus = (a:number,b:number): number =>{
     return a - b;
 }
 const result = minus(2,4);
-console.log(result);
+
+type objWithName = {
+    name: string,
+    age: number,
+    alive: boolean
+}
+const person = (user: objWithName)=>{
+    return user
+}
+console.log(person({name:"collo",age: 5, alive: true}));
+
+type stringNameOrBoolean = string|number
+
+const check = (name:stringNameOrBoolean)=>{
+    console.log(name)
+}
+check(4)
+
