@@ -434,9 +434,6 @@ class linkedList4 {
             }
         }
     }
-    insertAfter(value, afterValue){
-
-    }
     display(){
         const allNodes = [];
         let curNode = this.head;
