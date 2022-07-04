@@ -1,3 +1,3 @@
 # all-things-JavaScript
 
-this repository represents all things i do in vanilla javascript
+this repository represents all things javascripty
